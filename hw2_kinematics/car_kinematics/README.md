@@ -24,7 +24,7 @@ $$
 dy &= v \sin\theta dt\\ 
 \int_{y_{t-1}}^{y_{t}}dx &=\int_{t}^{t+\Delta t} v \sin\theta dt\\ 
 y_{t}-y_{t-1} &= \int_{\theta_t}^{\theta_{t+\Delta t}} v \sin\theta \bigg( \frac{L}{v \tan\alpha}\bigg) d\theta \\ 
-y_t &= y_{t-1} -\bigg( \frac{L}{\tan\alpha}\bigg) (\cos\theta_{t+\Delta t} - \sin\theta_{t})
+y_t &= y_{t-1} -\bigg( \frac{L}{\tan\alpha}\bigg) (\cos\theta_{t+\Delta t} - \cos\theta_{t})
 \end{align*}
 $$
 
@@ -32,7 +32,7 @@ Note: I use the following relationship between $dt$ and $d\theta$:
 
 $$
 \begin{align*}
-\frac{d\theta}{dt} &= \frac{v}{\tan\alpha}\\ 
+\frac{d\theta}{dt} &= \frac{v}{L\tan\alpha}\\ 
 \frac{L\tan\alpha}{v}d\theta &= dt
 \end{align*}
 $$
