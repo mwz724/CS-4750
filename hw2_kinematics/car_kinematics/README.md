@@ -5,6 +5,7 @@ NetID: mwz7
 Derivation for state update:
 
 Derivation for $x_t$:
+
 $$
 \begin{align*}
 \frac{dx}{dt} &= v \cos\theta
@@ -16,6 +17,7 @@ $$
 $$
 
 Derivation for $y_t$:
+
 $$
 \begin{align*}
 \frac{dy}{dt} &= v \sin\theta
@@ -27,6 +29,7 @@ $$
 $$
 
 Note: I use the following relationship between $dt$ and $d\theta$:
+
 $$
 \begin{align*}
 \frac{d\theta}{dt} &= \frac{v}{\tan\alpha}
@@ -35,6 +38,7 @@ $$
 $$
 
 I found out that using the following representation with $d\theta$ in the denominator often led to NaN errors when there was no angular control:
+
 $$
 \begin{align*}
  dt &= \frac{dt}{d\theta} d\theta
