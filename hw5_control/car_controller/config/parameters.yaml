@@ -1,0 +1,7 @@
+pid:
+  kp: 2.7
+  kd: 1
+mpc:
+  K: 79
+  T: 18
+  distance_lookahead: 1.1
